@@ -78,3 +78,10 @@
     font-weight: bold;
     
 }
+
+#allclear-btn
+{
+    position: fixed;
+    bottom: 0;
+    right: 5%;
+}

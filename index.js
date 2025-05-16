@@ -19,7 +19,7 @@ function newListItem(item)
      let d=document.createElement("div");
      d.classList.add("list-item");
     let p=document.createElement("p");
-    let count=increment();
+    makeCounter();
     p.innerHTML=count+"."+item;
     let b1=document.createElement("button");
     b1.innerHTML=`<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-archive-fill" viewBox="0 0 16 16">
@@ -77,18 +77,23 @@ document.body.addEventListener("keydown",function(event){
 });
 
 
+let count=0;
+
 function makeCounter()
 {
-    let count=1;
-    return function()
-    {
+    
+    
          return count++;
-    }
+    
 }
 
-increment=makeCounter();
 
 
 
+function allclear()
+{
+    document.getElementById("list-field").innerHTML="";
+    return count=0;
+}
 
 
