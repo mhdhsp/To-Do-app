@@ -37,6 +37,7 @@ function newListItem(item)
     b2.classList.add("btn");
     
      b1.classList.add("d-btn");
+     b2.classList.add("c-btn");
 
     b1.classList.add("btn-primary");
     b2.classList.add("btn-primary");
@@ -48,7 +49,7 @@ function newListItem(item)
     document.getElementById("list-field").appendChild(d);
     
     let dbtn=document.getElementsByClassName("d-btn");
-console.log(dbtn);
+
 Array.from(dbtn).forEach(element => {
         element.addEventListener("click",function(){
 
@@ -56,6 +57,15 @@ Array.from(dbtn).forEach(element => {
        
         });    
 });
+
+ let cbtn=document.getElementsByClassName("c-btn");
+ Array.from(cbtn).forEach(value=>{
+    value.addEventListener("click",function(){
+        let el=this.parentElement.parentElement.firstChild;
+        el.style.color="red";
+        el.style.textDecoration="line-through";
+    });
+ });
 
 }
 
