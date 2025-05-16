@@ -1,4 +1,4 @@
-const { createElement } = require("react");
+
 
 function add()
 {
@@ -67,6 +67,12 @@ Array.from(dbtn).forEach(element => {
     });
  });
 
+
+
 }
 
 
+document.body.addEventListener("keydown",function(even){
+    if(event.key=="Enter")
+        add();
+});
