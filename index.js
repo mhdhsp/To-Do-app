@@ -29,6 +29,20 @@ function newListItem(item)
             <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
             </svg>`;
 
+
+    b1. addEventListener("click",function(){
+
+            this.parentElement.parentElement.style.display="none";
+       
+        });  
+        
+    b2.addEventListener("click",function(){
+        let el=this.parentElement.parentElement.firstChild;
+        el.style.color="red";
+        el.style.textDecoration="line-through";
+        this.parentElement.parentElement.style.backgroundColor="rgb(204, 255, 204)";
+
+    });
     d2=document.createElement("div");
     d2.appendChild(b1);
     d2.appendChild(b2);
@@ -36,7 +50,7 @@ function newListItem(item)
     b1.classList.add("btn");
     b2.classList.add("btn");
     
-     b1.classList.add("d-btn");
+    
      b2.classList.add("c-btn");
 
     b1.classList.add("btn-primary");
@@ -45,34 +59,23 @@ function newListItem(item)
 
     d.appendChild(p);
      d.appendChild(d2);
-    //   d.appendChild(b2);
+
     document.getElementById("list-field").appendChild(d);
     
-    let dbtn=document.getElementsByClassName("d-btn");
-
-Array.from(dbtn).forEach(element => {
-        element.addEventListener("click",function(){
-
-            this.parentElement.parentElement.style.display="none";
-       
-        });    
-});
-
- let cbtn=document.getElementsByClassName("c-btn");
- Array.from(cbtn).forEach(value=>{
-    value.addEventListener("click",function(){
-        let el=this.parentElement.parentElement.firstChild;
-        el.style.color="red";
-        el.style.textDecoration="line-through";
-    });
- });
 
 
 
 }
 
 
-document.body.addEventListener("keydown",function(even){
+
+
+document.body.addEventListener("keydown",function(event){
     if(event.key=="Enter")
         add();
 });
+
+
+
+
+
