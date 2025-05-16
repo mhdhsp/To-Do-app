@@ -97,3 +97,19 @@ function allclear()
 }
 
 
+document.getElementById("outer").addEventListener("click",function(){
+    // alert("hello");
+    document.body.classList.toggle("dark-theme");
+    document.getElementById("list-field").classList.toggle("dark-theme");
+    document.getElementById("outer").classList.toggle("outer-dark");
+    document.getElementById("inner").classList.toggle("inner-dark");
+    them=document.getElementById("inner").textContent;
+    
+    
+    if(them=="Dark")
+        them="Light";
+    else
+        them="Dark";
+    document.getElementById("inner").innerHTML=them;
+    
+});
