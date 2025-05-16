@@ -1,0 +1,80 @@
+.main{
+    height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+
+.add-container
+{
+    background-color: aliceblue;
+    width: 70%;
+    height: fit-content;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+}
+.add-container input
+{
+    border: none;
+    background-color: aliceblue;
+    width: 100%;
+
+}
+.add-container>input:focus
+{
+   
+    outline: none;
+}
+
+#list-field
+{
+    width: 70%;
+    height: fit-content;
+    
+    
+}
+#list-field>div
+{
+    width: 100%;
+    height: fit-content;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 0.5rem;
+    
+    margin-top: 20px;
+}
+
+#list-field div{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+#list-field div button
+{
+    
+    margin:  0 1rem;
+    background-color: aliceblue;
+    color: black;
+    padding: 0 10px;
+    height: 30px;
+  
+}
+#list-field div button i
+{
+    font-size: large;
+}
+
+#list-field div p
+{
+    font-size: 1rem;
+    margin-left: 10%;
+    font-weight: bold;
+    
+}
