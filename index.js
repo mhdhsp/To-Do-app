@@ -17,6 +17,7 @@ function add()
 function newListItem(item)
 {
      let d=document.createElement("div");
+     d.classList.add("list-item");
     let p=document.createElement("p");
     p.innerHTML=item;
     let b1=document.createElement("button");
@@ -35,6 +36,8 @@ function newListItem(item)
     b1.classList.add("btn");
     b2.classList.add("btn");
     
+     b1.classList.add("d-btn");
+
     b1.classList.add("btn-primary");
     b2.classList.add("btn-primary");
 
@@ -44,5 +47,16 @@ function newListItem(item)
     //   d.appendChild(b2);
     document.getElementById("list-field").appendChild(d);
     
-    
+    let dbtn=document.getElementsByClassName("d-btn");
+console.log(dbtn);
+Array.from(dbtn).forEach(element => {
+        element.addEventListener("click",function(){
+
+            this.parentElement.parentElement.style.display="none";
+       
+        });    
+});
+
 }
+
+
