@@ -87,10 +87,6 @@ document.body.addEventListener("keydown",function(event){
 
 
 
-// document.body.addEventListener("keydown",function(event){
-//     if(event.key=="Enter")
-//         add();
-// });
 
 
 
@@ -98,11 +94,11 @@ document.body.addEventListener("keydown",function(event){
 
 
 
-// function allclear()
-// {
-//     document.getElementById("list-field").innerHTML="";
-//     return count=0;
-// }
+function allclear()
+{
+   arrayOfItems=[];
+   redisplay();
+}
 
 
 // document.getElementById("outer").addEventListener("click",function(){
