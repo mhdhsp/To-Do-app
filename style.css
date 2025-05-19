@@ -25,7 +25,7 @@
 .add-container input
 {
     border: none;
-    background-color: #ffffff;
+    background-color:inherit;
     width: 100%;
     color: #212529;
 
@@ -97,11 +97,11 @@
     background-color: blue;
     border: 1px solid black;
     border-radius: 20px;
-    width: 10vw;
+    width: 100px;
     height: 4vh;
     position: fixed;
     top: 5vh;
-    right: 10vw;
+    right: 7vw;
     cursor: pointer;
     padding: 0;
    
@@ -113,7 +113,7 @@
      background-color: rgb(99, 99, 128);
     border: 1px solid black;
     border-radius: 20px;
-    width: 6vw;
+    width: 70px;
     height: 4vh;
     
     padding:0 1rem;

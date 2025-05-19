@@ -33,7 +33,7 @@ function newListItem(item)
 
     b1. addEventListener("click",function(){
 
-            this.parentElement.parentElement.style.display="none";
+            this.parentElement.parentElement.remove();
        
         });  
         
