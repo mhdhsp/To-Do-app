@@ -36,7 +36,7 @@ function redisplay()
         p.innerHTML=`${index+1}`;
 
          let p2=document.createElement("p");
-        p2.innerHTML=`.${value}`;
+        p2.innerHTML=` ${value}`;
 
 
         d1.appendChild(p);
