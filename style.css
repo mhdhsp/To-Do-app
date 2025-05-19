@@ -140,3 +140,10 @@
     float: right;
      
 }
+
+.completed{
+    background-color: #c9f4a8;
+    font-style: italic;
+
+}
+
