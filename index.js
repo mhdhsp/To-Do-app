@@ -79,6 +79,12 @@ function clearField()
 }
 
 
+document.body.addEventListener("keydown",function(event){
+    if(event.key=="Enter")
+        getItem();
+});
+
+
 
 
 // document.body.addEventListener("keydown",function(event){
