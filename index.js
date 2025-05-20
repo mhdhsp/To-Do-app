@@ -57,6 +57,7 @@ function redisplay()
             </svg>`
             d2.appendChild(b1);
             d2.appendChild(b2);
+            
 
 
             //function when clicking delete
@@ -81,6 +82,7 @@ function redisplay()
 
 
         d1.appendChild(d2);
+        d1.classList.add("container-fluid");
        document.getElementById("list-field").appendChild(d1);
 
 
